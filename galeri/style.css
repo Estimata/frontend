@@ -1,0 +1,139 @@
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+.header {
+  background-color: #a0adef;
+}
+
+.gradient-circle {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #1a3d87, #b0c9f6);
+}
+
+.galeri-container {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  box-shadow: 8px 8px 3px rgba(167, 167, 167, 0.8);
+}
+
+.galeri-img {
+  display: block;
+  width: 100%;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.search-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50px; /* Sesuaikan ukuran ikon */
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.galeri-container:hover .galeri-img {
+  opacity: 0.5;
+}
+
+.galeri-container:hover .search-icon {
+  opacity: 1;
+}
+
+.navbar-custom {
+  background: linear-gradient(to right, #0d0540, #211472);
+  display: flex;
+  justify-content: space-between;
+}
+
+.pagination {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+}
+
+.pagination li {
+  margin: 0 5px;
+}
+
+.pagination a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 35px;
+  height: 35px;
+  text-decoration: none;
+  font-weight: bold;
+  color: #122150;
+  border-radius: 6px;
+  transition: background 0.3s;
+}
+
+.pagination .active a {
+  background: #9fa8da;
+}
+
+.pagination a:hover {
+  background: #c5cae9;
+}
+
+.pagination .next a {
+  background: #9fa8da;
+  border-radius: 50%;
+}
+
+.pagination .next a:hover {
+  background: #c5cae9;
+}
+
+.imagecust {
+  width: 30rem;
+}
+
+.card {
+  background-color: #ffffff;
+  color: white;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 991px) {
+  .responsive-text br {
+    display: none;
+    font-size: 2vw;
+  }
+}
+
+@media (max-width: 526px) {
+  .responsive-text {
+    font-size: 2vw;
+  }
+
+  .image {
+    width: 25px;
+    height: auto;
+    display: flex;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Mobile */
+  .background {
+    flex-direction: column;
+    flex-direction: column-reverse;
+    font-size: 2vw;
+    padding-right: 2rem;
+  }
+
+  .imagecust {
+    width: 20rem;
+  }
+}

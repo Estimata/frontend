@@ -1,0 +1,16 @@
+* {
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.header {
+    background-color: #A0ADEF;
+}
+
+.circle {
+    width: 72px;
+    height: 72px;
+    background: linear-gradient(120deg, #0D28A6 60%, rgba(255, 255, 255, 0.5) 100%);
+    border-radius: 50%;
+}
