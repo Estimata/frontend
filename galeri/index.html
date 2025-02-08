@@ -66,7 +66,7 @@
     </nav>    
     <div class="w-75 m-auto mt-3 mb-5">
         <div class="header mb-5 py-2 ps-5 rounded-3">
-            <a href="#" class="fw-bold text-dark">Home</a> / <a href="#">Galeri</a>
+            <a href="#" class="fw-bold text-dark text-decoration-none">Home</a> / <a href="#" class="text-decoration-none">Galeri</a>
         </div>
         <div class="row mb-5 justify-content-start align-items-center">
              <div class="col-auto">
@@ -78,8 +78,8 @@
             <!-- Item 1 -->
             <div class="col-md-4">
                 <div class="galeri-container">
-                    <img src="image.png" class="galeri-img img-fluid" alt="Image">
-                    <img src="asset/Ellipse 2.png" class="search-icon">
+                    <img src="asset/image.png" class="galeri-img img-fluid" alt="Image">
+                    <img src="asset/search.png" class="search-icon">
                 </div>
                 <div class="mt-4">
                     <img src="asset/fe_calendar.png" alt="">
@@ -90,8 +90,8 @@
             <!-- Item 2 -->
             <div class="col-md-4">
                 <div class="galeri-container">
-                    <img src="image.png" class="galeri-img img-fluid" alt="Image">
-                    <img src="asset/Ellipse 2.png" class="search-icon">
+                    <img src="asset/image.png" class="galeri-img img-fluid" alt="Image">
+                    <img src="asset/search.png" class="search-icon">
                 </div>
                 <div class="mt-4">
                     <img src="asset/fe_calendar.png" alt="">
@@ -102,8 +102,8 @@
             <!-- Item 3 -->
             <div class="col-md-4">
                 <div class="galeri-container">
-                    <img src="image.png" class="galeri-img img-fluid" alt="Image">
-                    <img src="asset/Ellipse 2.png" class="search-icon">
+                    <img src="asset/image.png" class="galeri-img img-fluid" alt="Image">
+                    <img src="asset/search.png" class="search-icon">
                 </div>
                 <div class="mt-4">
                     <img src="asset/fe_calendar.png" alt="">
@@ -114,8 +114,8 @@
             <!-- Item 4 -->
             <div class="col-md-4">
                 <div class="galeri-container">
-                    <img src="image.png" class="galeri-img img-fluid" alt="Image">
-                    <img src="asset/Ellipse 2.png" class="search-icon">
+                    <img src="asset/image.png" class="galeri-img img-fluid" alt="Image">
+                    <img src="asset/search.png" class="search-icon">
                 </div>
                 <div class="mt-4">
                     <img src="asset/fe_calendar.png" alt="">
@@ -126,8 +126,8 @@
             <!-- Item 5 -->
             <div class="col-md-4">
                 <div class="galeri-container">
-                    <img src="image.png" class="galeri-img img-fluid" alt="Image">
-                    <img src="asset/Ellipse 2.png" class="search-icon">
+                    <img src="asset/image.png" class="galeri-img img-fluid" alt="Image">
+                    <img src="asset/search.png" class="search-icon">
                 </div>
                 <div class="mt-4">
                     <img src="asset/fe_calendar.png" alt="">
@@ -138,8 +138,8 @@
             <!-- Item 6 -->
             <div class="col-md-4">
                 <div class="galeri-container">
-                    <img src="image.png" class="galeri-img img-fluid" alt="Image">
-                    <img src="asset/Ellipse 2.png" class="search-icon">
+                    <img src="asset/image.png" class="galeri-img img-fluid" alt="Image">
+                    <img src="asset/search.png" class="search-icon">
                 </div>
                 <div class="mt-4">
                     <img src="asset/fe_calendar.png" alt="">
@@ -147,7 +147,11 @@
                     <p class="mt-2">Deskripsi: Report Konsultasi Terkait Aplikasi Surat Pemerintahan Berbasis Elektronik 14/03/2018</p>
                 </div>
             </div>
-            <ul class="pagination row justify-content-center">
+            <div id="imageModal" class="modal-overlay">
+                <span class="close-btn">&times;</span>
+                <img id="modalImage" class="modal-content">
+            </div>
+            <ul class="pagination row justify-content-center mt-5">
                 <li class="active col-auto"><a href="#">1</a></li>
                 <li class="col-auto"><a href="#">2</a></li>
                 <li class="col-auto"><a href="#">3</a></li>
@@ -158,5 +162,6 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz4fnFO9gybFyX6iJgdzg1m2y3obG0r6xH2r0e0rX6BlAqF8BTrF5RkXN4" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-pzjw8f+ua7Kw1TIq0v8Fqk5g8W2JzQsU5c2dLPvx0B5YJ7tmop0ywo6zI3lT6cxz" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
 </body>
 </html>
