@@ -6,11 +6,10 @@
   background-color: #a0adef;
 }
 
-.gradient-circle {
-  width: 56px;
-  height: 56px;
-  border-radius: 50%;
-  background: linear-gradient(135deg, #1a3d87, #b0c9f6);
+.ellipse-img {
+  width: 72px;
+  max-width: 100%;
+  height: auto;
 }
 
 .galeri-container {
@@ -33,6 +32,7 @@
   transform: translate(-50%, -50%);
   width: 32px; /* Sesuaikan ukuran ikon */
   opacity: 0;
+  pointer-events: none;
   transition: opacity 0.5s ease-in-out;
 }
 
@@ -52,7 +52,9 @@
 }
 
 .modal-overlay {
-  display: none;
+  display: flex; /* Jangan pakai display: none */
+  opacity: 0;
+  visibility: hidden;
   position: fixed;
   top: 0;
   left: 0;
@@ -61,7 +63,7 @@
   background-color: rgba(0, 0, 0, 0.8);
   justify-content: center;
   align-items: center;
-  transition: opacity 0.5s ease-in-out;
+  transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
 }
 
 .modal-content {
@@ -73,8 +75,8 @@
 }
 
 .modal-overlay.active {
-  display: flex;
   opacity: 1;
+  visibility: visible;
 }
 
 .modal-overlay.active .modal-content {
@@ -163,6 +165,10 @@
     height: auto;
     display: flex;
   }
+
+  .ellipse-img {
+    width: 40px; /* Lebih kecil saat layar lebih kecil dari 526px */
+  }
 }
 
 @media (max-width: 768px) {
@@ -176,5 +182,9 @@
 
   .imagecust {
     width: 20rem;
+  }
+
+  .ellipse-img {
+    width: 64px;
   }
 }

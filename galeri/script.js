@@ -6,24 +6,23 @@ document.addEventListener("DOMContentLoaded", function () {
 
   galleryImages.forEach((image) => {
     image.addEventListener("click", function () {
+      modal.style.visibility = "visible"; // Pastikan modal bisa terlihat lagi
       modal.classList.add("active");
       modalImage.src = this.src;
     });
   });
 
-  closeBtn.addEventListener("click", function () {
+  function closeModal() {
     modal.classList.remove("active");
     setTimeout(() => {
-      modal.style.display = "none";
-    }, 500);
-  });
+      modal.style.visibility = "hidden"; // Sembunyikan setelah animasi selesai
+    }, 500); // Sesuai dengan durasi transition di CSS
+  }
 
+  closeBtn.addEventListener("click", closeModal);
   modal.addEventListener("click", function (e) {
     if (e.target === modal) {
-      modal.classList.remove("active");
-      setTimeout(() => {
-        modal.style.display = "none";
-      }, 500);
+      closeModal();
     }
   });
 });
